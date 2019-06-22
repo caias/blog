@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leet Code 1. two Sum
+title: Leet Code 1. two Sum (easy)
 categories: leetcode
 tags: leetcode
 comments: true
