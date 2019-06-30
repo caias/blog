@@ -82,10 +82,11 @@ alias deploy-jekyll="bash deploy.sh"
 # bash_profile 실행
 source ~/.bash_profile
 ~~~
-5. .gitignore 에서 _site폴더 해제
-6. <code>build-jekyll</code>
-7. <code>git commit -m'commit message'</code>
-8. <code>deploy-jekyll</code>
+5. .nojekyll 파일 생성
+6. .gitignore 에서 _site폴더 해제
+7. <code>build-jekyll</code>
+8. <code>git commit -m'commit message'</code>
+9. <code>deploy-jekyll</code>
 
 일단 구글링과 다른 블로그를 참조하면서 그대로 따라해봤더니 메시지도 더이상 안날라오고 배포도 잘된다. 해결이 된듯 하다.  
 그 후에 위에 소스와 git flow를 파악해보니 source branch에서 local master branch 랑 remote master branch를 삭제하고 _site폴더만 필터링 한후 마스터에 푸쉬 하는 형태이다.  
