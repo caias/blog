@@ -22,3 +22,17 @@ ol{
     margin-top:0;
   }
 }
+
+table:not(.highlight){
+  margin-left: 0;
+}
+
+table.stretch-table{
+  width: 100% !important;
+}
+
+code{
+  background-color: #4fb1ba;
+  border-radius:16px;
+  color:#fff;
+}

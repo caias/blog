@@ -204,7 +204,7 @@ print("Tags generated, count", total_tags.__len__())
 본인이 윈도우OS라면 python홈페이지 들어가서 install하면 되고 MAC OS라면 기본적으로 설치 됬을것이다. 
 
 1. 윈도우에서 <code>"UnicodeDecodeError: 'cp949' codec can't decode byte 0xe2 in position 6987: illegal multibyte sequence"</code> 에러가 뜬다면 인코딩 문제다.
-파일을 ANSI로 바꾸던가. 위에 소스중에 <code> f = open(filename, 'r', encoding='UTF-8')</code>부분에 UTF-8 인코딩을 해주면 된다.
+파일을 ANSI로 바꾸던가. 위에 소스중에 <code> f = open(filename, 'r', encoding='UTF-8')</code>부분에 UTF-8 인코딩을 해주면 된다. (웃긴건 MAC에서는 encoding이 있으면 또 에러난다 ㅡㅡ;;;; 얘 모지..)
 2. MAC OS에서 <code>./tag_generator.py</code> 실행시 permission denined가 뜨거나 없는 명령어라고 나온다면 <code>chmod +x tag_generator.py</code>를 치면 권한설정이 된다.
 
 ## 마치며..
