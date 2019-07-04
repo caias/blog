@@ -42,7 +42,7 @@
   </header>
 
   {% if page.featured-img %}
-  <div class="FeaturedImgBanner"><img src="{{ page.featured-img | relative_url }}" alt=""></div>
+  <div class="FeaturedImgBanner" style="background-image: url('{{ page.featured-img | relative_url }}');"></div>
   {% endif %}
 
   {% if no_excerpt %}

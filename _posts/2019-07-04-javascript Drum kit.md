@@ -4,7 +4,7 @@ title: 01. Drum kit
 categories: javascript30
 tags: javascript30 javascript vanillaScript es6
 comments: true
-featured-img: /assets/img/blog/javascript30/drumkit.png
+featured-img: /assets/img/blog/javascript30/drumkit.jpg
 ---
 
 > javascript30의 첫번째 Tutorial 01. Drum kit
