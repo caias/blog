@@ -41,6 +41,10 @@
     {% include components/message.html text=post.description hide=page.hide_description alt=alt %}
   </header>
 
+  {% if page.featured-img %}
+  <div class="FeaturedImgBanner"><img src="{{ page.featured-img | relative_url }}" alt=""></div>
+  {% endif %}
+
   {% if no_excerpt %}
     {{ post.content }}
   {% else %}

@@ -22,6 +22,10 @@ layout: base
   <hr class="sr-only"/>
 {% endif %}
 
+{% if page.featured-img %}
+<div class="FeaturedImgBanner"><img src="{{ page.featured-img | relative_url }}" alt=""></div>
+{% endif %}
+
 {% for post in posts %}
   {% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
