@@ -32,7 +32,7 @@ featured-img: /assets/img/blog/javascript30/drumkit.jpg
 
 ## 제시된 코드
 ~~~html
-<div class="keys">
+  <div class="keys">
     <div data-key="65" class="key">
       <kbd>A</kbd>
       <span class="sound">clap</span>
