@@ -4,13 +4,20 @@ title: will-change
 categories: frontend
 tags: Javascript css will-change
 comments: true
-youtubeId: -62uPWUxgcg
 ---
+
+> will-change 속성
+{:.lead}
+* list
+{:toc}
+
+## TLDR
+will-change는 실제로 변화시키는 속성과 실제로 변화가 발생할 엘리먼트에 설정하라. 그리고 변화가 종료되면 삭제하라.
 
 ## 개요
 <code>reflow</code>와 <code>repaint</code>를 알아보다가 최적화 방법중에 한가지 방법인 CSS3 속성중에 <code>will change</code>라는 속성이 최적화 스킬중에 한가지라는 글을 봤고 안그래도 예전에 UI개발자로 있을때 touch slide 라이브러리인 <code>slick.js</code>를 쓰다가 슬라이드가 마지막 인덱스에서 처음으로 돌아갈때 <code>깜빡임 현상이슈</code>가 있었을때 이 속성으로 해결을 했던 적이 있어서 나중에 찾아봐야지 하다가 이번기회에 한번 정리 해보고자 한다.
 
-{% include components/youtube.html id=page.youtubeId %}
+{% include components/youtube.html id='-62uPWUxgcg' %}
 
 ## animate vs transform
 아마 Mobile과 PC 양쪽 애니메이션 관련 기능을 구현해본 사람들중 **모바일에서는 animate를 쓰는거보다 transform을 쓰는것이 더 부드럽게 움직인다.**라는 말을 한번쯤을 들어봤을것이다. 나도 자주 들어봤던 얘기였고 그냥 그런가보다 하고 모바일에서는 <code>transform</code>기능을 우선순위로 쓰기 시작했었다.   
@@ -97,8 +104,4 @@ function removeHint() {
 
 ## 마치며..
 <code>will-change</code>가 CSS속성이긴 하지만, 현재로서는 모바일 관련 Front-end개발에서도 분명히 쓰이는 상황이 많을거 같다. 물론 적당한 상황과 적당한 요소에 써야지 정말 큰 힘을 발휘하겠지만, 이걸 판단 할수 있는 능력은 실제로 써보고 실무에 도입해보면서 경험치를 통해 판단할수 있는 능력을 키워야겠따.  
-
-### TLDR
-will-change는 실제로 변화시키는 속성과 실제로 변화가 발생할 엘리먼트에 설정하라. 그리고 변화가 종료되면 삭제하라.
-{:.faded}
 

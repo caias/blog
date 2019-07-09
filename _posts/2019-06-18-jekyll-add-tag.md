@@ -7,7 +7,7 @@ comments: true
 ---
 
 
-> page build failure
+> jekyll blog에 tag기능과 tag cloud 추가해보자.
 {:.lead}
 * list
 {:toc}

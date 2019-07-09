@@ -4,7 +4,7 @@
 
 # github pages 호스팅을 사용하는 경우 https://<github사용자 계정>.github.io 세팅
 # (커스텀 도메인을 사용할 경우 불필요).
-url:                   https://caias.github.io
+# url:                   https://caias.github.io
 
 # 블로그 루트 폴더 설정
 baseurl:               ''
@@ -38,15 +38,15 @@ author:
 color:               '#4f86aa'
 
 # Add links to the sidebar.
-menu:
-  - title:             About
-    url:               /about/
-  - title:             FrontEnd
-    url:               /frontend/
-  - title:             Dev Log
-    url:               /devlog/
-  - title:             UI Dev
-    url:               /ui/
+# menu:
+#   - title:             About
+#     url:               /about/
+#   - title:             FrontEnd
+#     url:               /frontend/
+#   - title:             Dev Log
+#     url:               /devlog/
+#   - title:             UI Dev
+#     url:               /ui/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -167,18 +167,14 @@ plugins:
 #   links:
 #     - https://twitter.com/<username>
 #     - https://github.com/<username>
+
+github_username:  caias
+codepen_username: caias
+
 highlighter:           rouge
 
 # Other Plugins
 # ---------------------------------------------------------------------------------------
-
-hydejack:
-
-  # Note that dark mode only works in the PRO version of Hydejack.
-  dark_mode:
-
-    # Set to `true` to allow visitors to switch between light and dark mode.
-    icon:              false
 
 kramdown:
   footnote_backlink:   '&#x21a9;&#xfe0e;'
