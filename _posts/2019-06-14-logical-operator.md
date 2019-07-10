@@ -69,5 +69,5 @@ const datacheck = data.a || 'default value';
 * NaN
 * Null
 * 0
-* '' , [], {} (비어있는 String, Array, Object)
+* '' (비어있는 string)
 * Undefined

@@ -12,7 +12,7 @@ comments: true
 {:toc}
 
 ## 개요
-포스팅을 조금씩 올리다보니 역시 필요한 부분이 생기기 마련인듯 하다. 소스가 좀 복잡하다 싶은 에시를 올리자니 <code>codepen</code>을 embed하는게 더 보기 편할듯 싶고, 가끔 <code>youtube를 embed</code>하고 싶을때도 있어서 이번에는 jekyll에 어떤식으로 넣어야 될지 정리해보자. 이 2가지를 embed시키는 방식은 굉장히 비슷하기 때문에 굉장히 쉽다. 
+포스팅을 조금씩 올리다보니 역시 필요한 부분이 생기기 마련인듯 하다. 소스가 좀 복잡하다 싶은 예시를 올리자니 <code>codepen</code>을 embed하는게 더 보기 편할듯 싶고, 가끔 <code>youtube를 embed</code>하고 싶을때도 있어서 이번에는 jekyll에 어떤식으로 넣어야 될지 정리해보자. 이 2가지를 embed시키는 방식은 굉장히 비슷하기 때문에 굉장히 쉽다. 
 
 **NOTE**: 단.. 개인적으로 jekyll 관련 plugin을 쓰고 싶지는 않다!!! 필요성을 못느낌..
 {:.message}
