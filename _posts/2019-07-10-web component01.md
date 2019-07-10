@@ -18,7 +18,7 @@ comments: true
 **NOTE**: Polymer란 web Component를 polyfill 해주는 framework이다.
 {:.message}
 
-<code>Web Component</code>라는 단어는 모르고 이 블로그이 원본 테마인 hydejack테마를 쓰고 소스를 파악하던중에 shadow root라는 부분이 Dom에 자리잡고 있었고 생전 처음보는 태그이름으로 쓰이고 있는 부분이 있어서 궁굼하던 참에 한번 찾아보고 정리해야겠다 싶었다. 현재 이 블로그를 개발자 도구로 element를 확인해보면 다음과 같은 부분이 보일것이다.    
+<code>Web Component</code>라는 단어는 모르고 이 블로그의 원본 테마인 hydejack테마를 쓰고 소스를 파악하던중에 shadow root라는 부분이 Dom에 자리잡고 있었고 생전 처음보는 태그이름으로 쓰이고 있는 부분이 있어서 궁굼하던 참에 한번 찾아보고 정리해야겠다 싶었다. 현재 이 블로그를 개발자 도구로 element를 확인해보면 다음과 같은 부분이 보일것이다.    
 
 ~~~html
 #shadow-root(open)
@@ -30,7 +30,7 @@ comments: true
 ~~~
 
 ## Web Component란?
-<code>Web Component</code>의 핵심 개념은 최근 framework 3대장인 <code>React</code>. <code>Angular</code>, <code>Vue</code>와 같은 프레임 워크 구성 요소와 비슷하다. 여기에서 가장 큰 차이점은 **framework 의존하는 대신에 브라우져가 기본적으로 제공하는 기술을 활용한 component이며, framework에 의존성이 1도 존재하지 않는 기술이다**. (그러나 어떠한 framework와도 결합 가능하며 webpack에서도 loader가 나와서 같이 사용 가능하다.)
+<code>Web Component</code>의 핵심 개념은 최근 framework 3대장인 <code>React</code>. <code>Angular</code>, <code>Vue</code>와 같은 프레임 워크 구성 요소와 비슷하다. 여기에서 가장 큰 차이점은 **framework에 의존하지 않고 브라우져가 기본적으로 제공하는 기술을 활용한 component이며, framework에 의존성이 1도 존재하지 않는 기술이다**. (그러나 어떠한 framework와도 결합 가능하며 webpack에서도 loader가 나와서 같이 사용 가능하다.)
 
 ### Web Component를 왜 써야 될까?
 현재 Hot하다는 framework들은 전부 훌륭하고 각각의 장단점 들이 있으며, IE하위버전을 운영하는 회사입장에서는 못쓰는 framework들도 많다. 또한 예를들어 Angular컴포넌트 안에서 React나 Vue를 정말 쉽게 가져다 쓸수 있는 상호운용성이 없다고 생각하다. 반대의 경우도 물론이고, 그 framework들은 그들의 생태계 안에서만 훌륭한게 아닐까 하는 생각이 든다.
@@ -45,7 +45,7 @@ comments: true
 Web Component의 구성요소에는 크게 3가지가 있다. 한가지 한가지씩 따로 포스팅을 해야될 정도로 양이 꽤 많으니 일단은 가볍게 한번씩 정리해보고 포스팅을 나눠서 해봐야겟다.   
 
 - <code>HTML import</code>방식까지 원래는 4가지였으나 2017년도에 polymer3.0을 release하면서 이 방식을 포기했고 <code>ES6 MODULE</code>로 대체되면서 **webpack의 생태계 안으로 들어가게 됬다.**
-- polymer3.0 때부터 Tempalte Element도 Template literals로 바뀌게 되었지만 이부분은 포기라기보다는 겸용할수 있기 때문에 아직까지는 [living standard](https://html.spec.whatwg.org/multipage/scripting.html#the-template-element)로 명시되있다.
+- polymer3.0 때부터 Tempalte Element도 Template literals로 바뀌게 되었지만 이부분은 포기라기보다는 겸용할수 있기 때문에 아직까지 [living standard](https://html.spec.whatwg.org/multipage/scripting.html#the-template-element)로 명시되있다.
 
 ### Custom Element
 <code>Custom Element</code>는 HTML의 엘리먼트를 사용자가 문서에서 확장하여 사용할 수 있도록 기능을 제공한다. 모든 웹 개발자들이 새로운 타입의 <code>HTML element</code>를 정의할 수 있도록 하여 본질적으로 최종 개발자들이 Web Component를 쉽게 사용하기 위한 방법을 제공하며 Web Component에서 가장 중요한 API라고 할수 있다.   
@@ -76,8 +76,8 @@ Web Component의 구성요소에는 크게 3가지가 있다. 한가지 한가�
 ~~~
 
 ### HTML template
-<code>`<template>`</code> 태그로 이루어진 이 tag는 runtime에만 활성화되는 복제 가능한 마크업 템플릿이라고 볼수 있다.   
-[WhatWG HTML Templates](https://html.spec.whatwg.org/multipage/scripting.html#the-template-element) 표준규격은 템플릿을 위한 표준적인 DOM 기반의 접근방법을 기술하는 새로운 엘리먼트인 `<template>`을 정의 하였으며 <u>템플릿 컨텐츠는 사용시까지 비활성화되어 렌더링되지 않고 템플릿 안의 스크립트나 DOM이 다른 곳에 영향을 미치는 부작용이 없습니다.</u> 선언/재활용 역시 마찬가지이며 또한 적용 위치 역시 자유롭기 때문에 많은 부분에서 활용이 가능하다.
+&lt;template&gt; 태그로 이루어진 이 tag는 runtime에만 활성화되는 복제 가능한 마크업 템플릿이라고 볼수 있다.   
+[WhatWG HTML Templates](https://html.spec.whatwg.org/multipage/scripting.html#the-template-element) 표준규격은 템플릿을 위한 표준적인 DOM 기반의 접근방법을 기술하는 새로운 엘리먼트인 `<template>`을 정의 하였으며 <u>템플릿 컨텐츠는 사용시까지 비활성화되어 렌더링되지 않고 템플릿 안의 스크립트나 DOM이 다른 곳에 영향을 미치는 부작용이 없다.</u> 선언/재활용 역시 마찬가지이며 또한 적용 위치 역시 자유롭기 때문에 많은 부분에서 활용이 가능하다.
 
 ## Web Component 및 Framework
 [React](https://www.sitepen.com/blog/2017/08/08/wrapping-web-components-with-react/) 와 [Angular](https://www.sitepen.com/blog/2017/09/14/using-web-components-with-angular/) 와 같은 프레임 워크에서 네이티브 Web Components를 사용하는 방법에 대한 설명이 있지만 두 가지 모두 고유성과 관련된주의 사항이 명시되있다. [Custom Elements Everywhere](https://custom-elements-everywhere.com/) 여기에서 다양한 프레임 워크가 사용자 지정 요소 (웹 구성 요소의 핵심 요소)와 얼마나 잘 통합되어 있는지를 확인할수 있으니 한번쯤 살펴보면 좋을듯 하다.
