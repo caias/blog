@@ -12,7 +12,7 @@ comments: true
 {:toc}
 
 ## 개요
-Web Component의 구성요조 중에 첫번째로 <code>Custom Element</code>에 대해 어떤 방식으로 쓰이고 어떤 개념인지 한번 파악해보자. 
+Web Component의 구성요소 중에 첫번째로 <code>Custom Element</code>에 대해 어떤 방식으로 쓰이고 어떤 개념인지 한번 파악해보자. 
 
 ## Custom Element의 명명규칙
 Custom Element를 사용함에 있어서 특별한 네이밍 규칙이 있다. 그것은 바로 <code>-</code>를 하나 이상 포함해야 되는 규칙이다. 또한 예약된 태그 이름이 아니여야 한다. 
@@ -37,7 +37,8 @@ window.customElements.define('my-customtag', class extends HTMLElement {});
 제일 간단한 코드로 Custom Element를 등록하는 방법이다. window의 CustomElementRegistry에 Custom Tag와 주어진 Class를 묶어주는 역활이다. 아직까지는 별다른 로직도 없고 별 의미는 없지만 <code>&lt;my-customtag&gt;</code>는 HTML에서 사용 될 수 있는 Custom Element가 된것이다. 
 
 ### 그럼 HTMLElement 라는게 몰까?
-모든 엘리먼트는 HTMLElement의 자식이다. 따라서 HTMLElement의 프로퍼티를 똑같이 가지고 있고, 동시에 엘리먼트의 성격에 따라서 자신만의 프로퍼티를 가지고 있는데 이것은 엘리먼트의 성격에 따라서 달라진다. HTMLElement는 <code>Element</code>의 자식이고 Element는 <code>Node</code>의 자식입니다. Node는 Object의 자식입니다. 이러한 관계를 <code>DOM Tree</code>라고 합니다.
+모든 엘리먼트는 HTMLElement의 자식이다. 따라서 HTMLElement의 프로퍼티를 똑같이 가지고 있고, 동시에 엘리먼트의 성격에 따라서 자신만의 프로퍼티를 가지고 있는데 이것은 엘리먼트의 성격에 따라서 달라진다. HTMLElement는 <code>Element</code>의 자식이고 Element는 <code>Node</code>의 자식입니다. Node는 Object의 자식입니다. 이러한 관계를 <code>DOM Tree</code>라고 합니다.   
+
 ![Full-width image]({{'/assets/img/blog/190710/domtree.png'| relative_url}}){:.lead data-width="100%"}
 출처: 생활코딩
 {:.figure}
