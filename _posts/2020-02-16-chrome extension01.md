@@ -6,7 +6,7 @@ tags: chrome-extension Javascript react
 comments: true
 ---
 
-> chrome extension 제작기
+> chrome extension#1
 {:.lead}
 * list
 {:toc}
