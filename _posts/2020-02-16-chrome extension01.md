@@ -1,6 +1,6 @@
 ---
 layout: post
-title: chrome extension 을 만들어보자#1
+title: chrome extension#1
 categories: frontend
 tags: chrome-extension Javascript react
 comments: true
