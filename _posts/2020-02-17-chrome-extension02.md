@@ -25,7 +25,7 @@ chrome extension을 개발하면서 사용한 tech는 <code>react</code> / <code
 일단 API를 몇번 쓰게 될테니 공통 모듈을 하나 만들어놓자.
   
 **AxiosLoader.ts**
-~~~ts
+~~~typescript
 import axios, { AxiosRequestConfig } from 'axios';
 
 export async function AxiosLoader<T>(url: string, config?: AxiosRequestConfig): Promise<T> {
@@ -46,7 +46,7 @@ export async function AxiosLoader<T>(url: string, config?: AxiosRequestConfig): 
 이부분도 몇번 쓰이게 될테니 API 통신 후 또는 content script에서 storage정보를  <code>Get/Set</code> 하기 위한 공통 모듈을 하나 만들어놓자.
   
 **Storage.ts**
-~~~ts
+~~~typescript
 interface IResult {
   msg?: string;
   status?: number;
@@ -99,7 +99,7 @@ export function storage<T>(method: string = 'get', type: string = 'local', param
 팀원정보 / 현재로그인한 유저 2가지의 정보를 가져오려면 API end point가 2군데였다.
 2가지의 API를 get 한뒤에 storage정보에 담아주면 background에서 실행할 내용은 이게 끝이다. 
 
-~~~ts
+~~~typescript
 import { AxiosLoader } from 'util/AxiosLoader';
 import { storage } from 'util/Storage';
 
