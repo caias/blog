@@ -21,7 +21,13 @@
 }
 .highlight .err {
   color: #960050;
-  background-color: #1e0010;
+}
+.highlight .na + .p + .err{
+  color:#fff;
+}
+.highlight .o + .sr + .err,
+.highlight .p + .sr + .err{
+  color: #f92672;
 }
 .highlight .gi {
   color: #ffffff;
