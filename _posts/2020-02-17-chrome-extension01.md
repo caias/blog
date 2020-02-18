@@ -1,6 +1,6 @@
 ---
 layout: post
-title: chrome extension으로 pull-request를 slack으로 연동해보자#1
+title: chrome extension으로 bitbucket stash pull-request관련 기능을 만들어보자#1
 categories: frontend
 tags: chrome-extension
 comments: true
