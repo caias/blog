@@ -14,7 +14,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // <<<<< LINK
-pre, table:not(.highlight), .katex-display, .break-layout  {
+table:not(.highlight), .katex-display, .break-layout  {
   $pad: $content-padding * 2;
 
   @media screen {

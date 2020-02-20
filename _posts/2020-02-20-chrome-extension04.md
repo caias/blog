@@ -25,7 +25,7 @@ comments: true
 <code>payload design</code>이란 말그대로 slack에 메시지를 보낼때 어떤 template을 써서 보낼지를 구현하는것이다. 여러가지 template이 어느정도 정해져있고 그에 맞는 parameter들이 정해져있다. 그중에서 나는 아래와 같은 template으로 꾸몄다.
   
 <figure>
-  <img alt="slack message" src="/assets/img/blog/200221/slack-temp-min.png" class="lead" data-width="445" data-height="306" />
+  <img alt="slack message" src="/assets/img/blog/200221/slack-temp-min.png" data-width="445" data-height="306" />
   <figcaption align="center">구현했던 slack message template</figcaption>
 </figure>
   
