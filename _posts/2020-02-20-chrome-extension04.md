@@ -106,8 +106,8 @@ Backtick이 들어간 이유는 이미지에서 보는거와 같이 slack 특성
 ### (4) color
 <code>상단 template 이미지에 초록색 라인</code>을 찾아보자.  
 바로 저부분을 담당하는 parameter이며, hexacode를 직접 입력하는것도 가능하다.  
-기본적으로 제공하는 good, bad도 있으며. good은 초록색 bad는 빨강색으로 표기가 된다.  
-평소에는 good, decline 또는 unapproved 이런 nagative 요소에는 bad로 나눠서 표기되도록 했다.
+기본적으로 제공하는 good, danger 있으며. good은 초록색 danger는 빨강색으로 표기가 된다.  
+평소에는 good, decline 또는 unapproved 이런 nagative 요소에는 danger로 나눠서 표기되도록 했다.
 
 ### (5) short
 <code>boolean</code>값으로 들어가며, true일때는 주최자, 대상브랜치 처럼 한줄에 column이 2개가 되고 false일때는 그냥 한줄에 column이 1개가 된다.
@@ -124,9 +124,10 @@ actions에도 여러가지 기능이 있지만, 그중에서도 comment가 적�
 ## 마치며..
 리뷰어 관련소스가 payload 소스안에 없는것을 발견하셨나요?  
 이부분은 다음 포스트에 연결해서 기록해 보고자 한다. 별거 아닌 기록이 될 수도 있겠지만, 리뷰어 관련해서는 다음과 같은 기록들을 할 예정이다.  
-- <code>Reviewer세팅</code>
-- <code>Slack mention</code>
+
+- <code>Slack Mansion</code>
 - <code>Slack ID Token</code>
+- <code>Reviewer세팅</code>
 - <code>payload array push Reviewer</code>  
 
 생각보다 짜잘하게 기록 및 설명을 하고자 하는양이 좀 된다.  
