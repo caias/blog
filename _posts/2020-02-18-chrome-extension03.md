@@ -4,6 +4,7 @@ title: chrome extension으로 bitbucket stash pull-request관련 기능을 만�
 categories: frontend
 tags: chrome-extension react axios typescript
 comments: true
+featured-img: /assets/img/blog/200221/extension-thumb-min.png
 ---
 
 > chrome extension#03
