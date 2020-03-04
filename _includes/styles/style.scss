@@ -59,7 +59,7 @@ $font-family:         {{ site.font         | default:"Noto Sans, Helvetica, Aria
     @import "hydejack/__link__/break-layout";
   {% endunless %}
 
-  // @import "syntax";
+  @import "syntax";
   @import "spinner";
 
   // @import "my-inline";
@@ -96,7 +96,7 @@ $font-family:         {{ site.font         | default:"Noto Sans, Helvetica, Aria
     @import "hydejack/_break-layout.pre.scss";
   {% endunless %}
 
-  // @import "syntax";
+  @import "syntax";
   @import "spinner";
 
   @import "my-inline";
